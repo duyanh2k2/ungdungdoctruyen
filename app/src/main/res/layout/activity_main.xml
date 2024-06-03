@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#673F3F"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/timkiem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_timkiem"
+            android:ems="10"
+            android:hint="Nhập tên truyện cần tìm"
+            android:inputType="textPersonName"
+            android:textColor="#FAF6F6"
+            android:textColorHint="#471818"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/update"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:onClick="update"
+            android:padding="10dp"
+            app:srcCompat="@drawable/refresh"
+            app:tint="#FFFFFF" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/truyen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3" />
+
+</LinearLayout>

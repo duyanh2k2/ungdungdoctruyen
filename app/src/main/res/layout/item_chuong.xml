@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/chuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="chương 1"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ngaydang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ngày đăng"
+        android:textColor="#222020"
+        android:textColorHint="#302D2D"
+        android:textSize="13sp" />
+</LinearLayout>
